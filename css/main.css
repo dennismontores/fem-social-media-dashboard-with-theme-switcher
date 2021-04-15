@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+
+:root {
+    --lime-green: hsl(163, 72%, 41%);
+    --bright-red: hsl(356, 69%, 56%);
+    --facebook: hsl(208, 92%, 53%);
+    --twitter: hsl(203, 89%, 53%);
+    --instagram: linear gradient hsl(37, 97%, 70%) to hsl(329, 70%, 58%);
+    --youtube: hsl(348, 97%, 39%);
+    --dark-theme-toggle: linear gradient hsl(210, 78%, 56%) to
+        hsl(146, 68%, 55%);
+    --light-theme-toggle: hsl(230, 22%, 74%);
+    --very-dark-blue-bg-dk: hsl(230, 17%, 14%);
+    --very-dark-blue-top-dk: hsl(232, 19%, 15%);
+    --dark-desaturated-blue-cardbg-dk: hsl(228, 28%, 20%);
+    --desaturated-blue-text-dk: hsl(228, 28%, 20%);
+    --white: hsl(0, 0%, 100%);
+    --very-pale-blue-lg: hsl(225, 100%, 98%);
+    --light-grayish-blue-lg: hsl(227, 47%, 96%);
+    --dark-grayish-blue-lg: hsl(228, 12%, 44%);
+    --very-dark-blue-lg: hsl(230, 17%, 14%);
+}
+
+html {
+    font-size: 10px;
+}
+
+.app {
+    font-family: 'Inter', sans-serif;
+    margin: 50px 25px;
+    color: var(--very-dark-blue-lg);
+    background-color: var(--white);
+}
+
+/********** HEADER STYLES ***********/
+
+.header {
+    margin-bottom: 2.5rem;
+}
+
+.header .app__title {
+    font-size: 2.5rem;
+    margin-bottom: .5rem;
+}
+
+.header .app__global-info {
+    margin-top: .5rem;
+    font-size: 1.4rem;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    color: var(--dark-grayish-blue-lg);
+}
+
+/********** MAIN CONTAINER STYLES ***********/
+
