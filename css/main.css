@@ -36,6 +36,10 @@ html {
     background-color: var(--white);
 }
 
+.card--rounded {
+    border-radius: 0.7rem;
+}
+
 /********** HEADER STYLES ***********/
 
 .header {
@@ -117,7 +121,6 @@ html {
     position: relative;
     overflow: hidden;
     text-align: center;
-    border-radius: 0.7rem;
     background-color: var(--light-grayish-blue-lg);
     margin-bottom: 2.5rem;
     padding-top: 3rem;
@@ -180,7 +183,7 @@ html {
     font-size: 1.5rem;
 }
 
-.social-card .social-card__daily-stat {
+.daily-stat {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -189,16 +192,69 @@ html {
     margin-bottom: 1rem;
 }
 
-.social-card .social-card__daily-stat.daily-stat--lime-green-text {
+.daily-stat--lime-green-text {
     color: var(--lime-green);
 }
 
-.social-card .social-card__daily-stat.daily-stat--bright-red-text {
+.daily-stat--bright-red-text {
     color: var(--bright-red);
 }
 
-.social-card .social-card__daily-stat .daily-stat__arrow {
+.daily-stat .daily-stat__arrow {
     margin-right: 0.5rem;
 }
 
 /******* OVERVIEW STYLES *******/
+
+.overview-container {
+    margin-top: 3rem;
+}
+
+.overview-container .overview__title {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+.overview-container .overview__cards-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.overview__cards-container .overview-card {
+    padding: 2.5rem;
+    margin-bottom: 2rem;
+    background-color: var(--light-grayish-blue-lg);
+}
+
+.overview__cards-container .overview-card .overview-card__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.overview__cards-container .overview-card .overview-card__title {
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.overview__cards-container .overview-card .overview-card__icon {
+    height: 100%;
+}
+
+.overview__cards-container .overview-card .overview-card__body {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.overview__cards-container .overview-card .overview-card__total {
+    margin: 0;
+    font-size: 3rem;
+    font-weight: 700;
+    color: var(--very-dark-blue-lg);
+}
+
+.overview__cards-container .overview-card .overview-card__daily-stat {
+    margin: 0;
+}
