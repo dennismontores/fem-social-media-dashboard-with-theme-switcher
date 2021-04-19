@@ -1,9 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es" class="dark-mode">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <!-- displays site properly based on user's device -->
         <link
             rel="icon"
             type="image/png"
@@ -16,10 +15,10 @@
     </head>
     <body class="app">
         <header class="header">
-            <h1 class="app__title">Social Media Dashboard</h1>
-            <p class="app__global-info">Total Followers: 23,004</p>
-        </header>
-        <main class="main-container">
+            <section class="global">
+                <h1 class="app__title">Social Media Dashboard</h1>
+                <p class="app__global-info">Total Followers: 23,004</p>
+            </section>
             <section class="mode-container">
                 <p class="mode-container__type">Dark Mode</p>
                 <input
@@ -28,8 +27,12 @@
                     checked="true"
                 />
             </section>
+        </header>
+        <main class="main-container">
             <section class="social-container">
-                <div class="social-card social-card--facebook card--rounded">
+                <div
+                    class="card social-card social-card--facebook card--rounded"
+                >
                     <div class="social-card__user-info">
                         <img
                             class="social-card__icon"
@@ -49,7 +52,9 @@
                         12 Today
                     </p>
                 </div>
-                <div class="social-card social-card--twitter card--rounded">
+                <div
+                    class="card social-card social-card--twitter card--rounded"
+                >
                     <div class="social-card__user-info">
                         <img
                             class="social-card__icon"
@@ -69,7 +74,9 @@
                         99 Today
                     </p>
                 </div>
-                <div class="social-card social-card--instagram card--rounded">
+                <div
+                    class="card social-card social-card--instagram card--rounded"
+                >
                     <div class="social-card__user-info">
                         <img
                             class="social-card__icon"
@@ -89,7 +96,9 @@
                         1099 Today
                     </p>
                 </div>
-                <div class="social-card social-card--youtube card--rounded">
+                <div
+                    class="card social-card social-card--youtube card--rounded"
+                >
                     <div class="social-card__user-info">
                         <img
                             class="social-card__icon"
@@ -113,7 +122,7 @@
                 <h2 class="overview__title">Overview - Today</h2>
 
                 <div class="overview__cards-container">
-                    <div class="overview-card card--rounded">
+                    <div class="card overview-card card--rounded">
                         <div class="overview-card__header">
                             <p class="overview-card__title">Page Views</p>
                             <img
@@ -133,7 +142,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="overview-card card--rounded">
+                    <div class="card overview-card card--rounded">
                         <div class="overview-card__header">
                             <p class="overview-card__title">Likes</p>
                             <img
@@ -153,7 +162,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="overview-card card--rounded">
+                    <div class="card overview-card card--rounded">
                         <div class="overview-card__header">
                             <p class="overview-card__title">Likes</p>
                             <img
@@ -172,7 +181,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="overview-card card--rounded">
+                    <div class="card overview-card card--rounded">
                         <div class="overview-card__header">
                             <p class="overview-card__title">Profile Views</p>
                             <img
@@ -192,7 +201,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="overview-card card--rounded">
+                    <div class="card overview-card card--rounded">
                         <div class="overview-card__header">
                             <p class="overview-card__title">Retweets</p>
                             <img
@@ -211,7 +220,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="overview-card card--rounded">
+                    <div class="card overview-card card--rounded">
                         <div class="overview-card__header">
                             <p class="overview-card__title">Likes</p>
                             <img
@@ -230,7 +239,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="overview-card card--rounded">
+                    <div class="card overview-card card--rounded">
                         <div class="overview-card__header">
                             <p class="overview-card__title">Likes</p>
                             <img
@@ -249,7 +258,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="overview-card card--rounded">
+                    <div class="card overview-card card--rounded">
                         <div class="overview-card__header">
                             <p class="overview-card__title">Total Views</p>
                             <img
