@@ -84,7 +84,7 @@ html::before {
 }
 
 .header .global {
-    border-bottom: 1px solid var(--dark-grayish-blue);
+    margin-bottom: 2rem;
 }
 
 .header .global .app__title {
@@ -95,7 +95,6 @@ html::before {
 
 .header .global .app__global-info {
     margin-top: 0.5rem;
-    margin-bottom: 2.5rem;
     font-size: 1.4rem;
     font-weight: 700;
     letter-spacing: 0.5px;
@@ -106,6 +105,8 @@ html::before {
     justify-content: space-between;
     align-items: center;
     margin-top: 0.5rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid var(--dark-grayish-blue);
 }
 
 .header .mode-container .mode-container__type {
@@ -165,8 +166,7 @@ html::before {
     text-align: center;
     background-color: var(--card-bg);
     margin-bottom: 2.5rem;
-    padding-top: 3rem;
-    padding-bottom: 2rem;
+    padding: 2rem 0;
     width: 100%;
 }
 
@@ -199,7 +199,7 @@ html::before {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 3rem;
+    margin-top: 2rem;
 }
 
 .social-card .social-card__user-info .social-card__icon {
@@ -208,22 +208,24 @@ html::before {
 
 .social-card .social-card__user-info .social-card__username {
     font-weight: 700;
-    font-size: 1.4rem;
+    font-size: 1.2rem;
 }
 
 .social-card .social-card__total {
+    letter-spacing: -1px;
+    margin-top: 2.5rem;
+    margin-bottom: 0;
     font-weight: 700;
-    font-size: 6rem;
+    font-size: 6.5rem;
     color: var(--secondary-text);
-    margin: unset;
 }
 
 .social-card .social-card__audience {
-    margin-top: 0.4rem;
-    margin-bottom: 4rem;
+    margin-top: 0.2rem;
+    margin-bottom: 3.5rem;
     text-transform: uppercase;
-    letter-spacing: 0.5rem;
-    font-size: 1.5rem;
+    letter-spacing: 0.7rem;
+    font-size: 1.3rem;
 }
 
 .daily-stat {
@@ -250,7 +252,7 @@ html::before {
 /******* OVERVIEW STYLES *******/
 
 .overview-container {
-    margin-top: 3rem;
+    margin-top: 2rem;
 }
 
 .overview-container .overview__title {
@@ -266,7 +268,7 @@ html::before {
 
 .overview__cards-container .overview-card {
     width: 100%;
-    padding: 2.5rem;
+    padding: 1.7rem 2.5rem;
     margin-bottom: 2rem;
     background-color: var(--card-bg);
 }
@@ -275,7 +277,7 @@ html::before {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 2rem;
+    margin-bottom: 1.2rem;
 }
 
 .overview__cards-container .overview-card .overview-card__title {
@@ -312,16 +314,19 @@ html::before {
         justify-content: space-between;
     }
 
-    .header .global {
-        border: unset;
+    .header .global .app__global-info {
+        margin-bottom: unset;
     }
 
     .header .mode-container {
         float: right;
+        border: unset;
+        margin: 0;
+        padding: 0;
     }
 
     .header .mode-container .mode-container__type {
-        margin: 1rem;
+        margin: 0 1rem 0 0;
     }
 
     .main-container .social-container {
