@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="light-mode">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -16,10 +16,10 @@
     </head>
     <body class="app">
         <header class="header">
-            <h1 class="app__title">Social Media Dashboard</h1>
-            <p class="app__global-info">Total Followers: 23,004</p>
-        </header>
-        <main class="main-container">
+            <section class="global">
+                <h1 class="app__title">Social Media Dashboard</h1>
+                <p class="app__global-info">Total Followers: 23,004</p>
+            </section>
             <section class="mode-container">
                 <p class="mode-container__type">Dark Mode</p>
                 <input
@@ -28,65 +28,104 @@
                     checked="true"
                 />
             </section>
+        </header>
+        <main class="main-container">
             <section class="social-container">
-                <div class="social-card">
+                <div
+                    class="card social-card card--rounded social-card--facebook"
+                >
                     <div class="social-card__user-info">
                         <img
                             class="social-card__icon"
                             src="./images/icon-facebook.svg"
                             alt=""
                         />
-                        <span>@nathanf</span>
+                        <span class="social-card__username">@nathanf</span>
                     </div>
                     <p class="social-card__total">1987</p>
-                    <p class="social-card__auddience">Followers</p>
-                    <p class="social-card__daily-stat">12 Today</p>
+                    <p class="social-card__audience">Followers</p>
+                    <p class="daily-stat daily-stat--green">
+                        <img
+                            class="daily-stat__arrow"
+                            src="./images/icon-up.svg"
+                            alt=""
+                            srcset=""
+                        />
+                        12 Today
+                    </p>
                 </div>
-                <div class="social-card">
+                <div
+                    class="card social-card card--rounded social-card--twitter"
+                >
                     <div class="social-card__user-info">
                         <img
                             class="social-card__icon"
                             src="./images/icon-twitter.svg"
                             alt=""
                         />
-                        <span>@nathanf</span>
+                        <span class="social-card__username">@nathanf</span>
                     </div>
                     <p class="social-card__total">1044</p>
-                    <p class="social-card__auddience">Followers</p>
-                    <p class="social-card__daily-stat">99 Today</p>
+                    <p class="social-card__audience">Followers</p>
+                    <p class="daily-stat daily-stat--green">
+                        <img
+                            class="daily-stat__arrow"
+                            src="./images/icon-up.svg"
+                            alt=""
+                            srcset=""
+                        />99 Today
+                    </p>
                 </div>
-                <div class="social-card">
+                <div
+                    class="card social-card card--rounded social-card--instagram"
+                >
                     <div class="social-card__user-info">
                         <img
                             class="social-card__icon"
                             src="./images/icon-instagram.svg"
                             alt=""
                         />
-                        <span>@nathanf</span>
+                        <span class="social-card__username">@realnathanf</span>
                     </div>
                     <p class="social-card__total">11k</p>
-                    <p class="social-card__auddience">Followers</p>
-                    <p class="social-card__daily-stat">1099 Today</p>
+                    <p class="social-card__audience">Followers</p>
+                    <p class="daily-stat daily-stat--green">
+                        <img
+                            class="daily-stat__arrow"
+                            src="./images/icon-up.svg"
+                            alt=""
+                            srcset=""
+                        />1099 Today
+                    </p>
                 </div>
-                <div class="social-card">
+                <div
+                    class="card social-card card--rounded social-card--youtube"
+                >
                     <div class="social-card__user-info">
                         <img
                             class="social-card__icon"
                             src="./images/icon-youtube.svg"
                             alt=""
                         />
-                        <span>@nathanf</span>
+                        <span class="social-card__username">Nathan F.</span>
                     </div>
                     <p class="social-card__total">8239</p>
-                    <p class="social-card__auddience">Subscribers</p>
-                    <p class="social-card__daily-stat">144 Today</p>
+                    <p class="social-card__audience">Subscribers</p>
+                    <p class="daily-stat daily-stat--red">
+                        <img
+                            class="daily-stat__arrow"
+                            src="./images/icon-down.svg"
+                            alt=""
+                            srcset=""
+                        />144 Today
+                    </p>
                 </div>
             </section>
             <section class="overview-container">
                 <h2 class="overview-title">Overview - Today</h2>
 
                 <div class="overview-cards-container">
-                    <div class="overview-card">
+                    <div class="card overview-card card--rounded">
                         <div class="overview-card__header">
                             <p class="overview-card__title">Page Views</p>
                             <img
@@ -96,10 +135,17 @@
                         </div>
                         <div class="overview-card__body">
                             <p class="overview-card__total">87</p>
-                            <p class="overview-card__daily-stat">3%</p>
+                            <p class="daily-stat daily-stat--green">
+                                <img
+                                    class="daily-stat__arrow"
+                                    src="./images/icon-up.svg"
+                                    alt=""
+                                    srcset=""
+                                />3%
+                            </p>
                         </div>
                     </div>
-                    <div class="overview-card">
+                    <div class="card overview-card card--rounded">
                         <div class="overview-card__header">
                             <p class="overview-card__title">Likes</p>
                             <img
@@ -109,10 +155,17 @@
                         </div>
                         <div class="overview-card__body">
                             <p class="overview-card__total">52</p>
-                            <p class="overview-card__daily-stat">2%</p>
+                            <p class="daily-stat daily-stat--red">
+                                <img
+                                    class="daily-stat__arrow"
+                                    src="./images/icon-down.svg"
+                                    alt=""
+                                    srcset=""
+                                />2%
+                            </p>
                         </div>
                     </div>
-                    <div class="overview-card">
+                    <div class="card overview-card card--rounded">
                         <div class="overview-card__header">
                             <p class="overview-card__title">Likes</p>
                             <img
@@ -122,10 +175,17 @@
                         </div>
                         <div class="overview-card__body">
                             <p class="overview-card__total">5462</p>
-                            <p class="overview-card__daily-stat">2257%</p>
+                            <p class="daily-stat daily-stat--green">
+                                <img
+                                    class="daily-stat__arrow"
+                                    src="./images/icon-up.svg"
+                                    alt=""
+                                    srcset=""
+                                />2257%
+                            </p>
                         </div>
                     </div>
-                    <div class="overview-card">
+                    <div class="card overview-card card--rounded">
                         <div class="overview-card__header">
                             <p class="overview-card__title">Profile Views</p>
                             <img
@@ -135,10 +195,17 @@
                         </div>
                         <div class="overview-card__body">
                             <p class="overview-card__total">52k</p>
-                            <p class="overview-card__daily-stat">1375%</p>
+                            <p class="daily-stat daily-stat--green">
+                                <img
+                                    class="daily-stat__arrow"
+                                    src="./images/icon-up.svg"
+                                    alt=""
+                                    srcset=""
+                                />1375%
+                            </p>
                         </div>
                     </div>
-                    <div class="overview-card">
+                    <div class="card overview-card card--rounded">
                         <div class="overview-card__header">
                             <p class="overview-card__title">Retweets</p>
                             <img
@@ -148,10 +215,17 @@
                         </div>
                         <div class="overview-card__body">
                             <p class="overview-card__total">117</p>
-                            <p class="overview-card__daily-stat">303%</p>
+                            <p class="daily-stat daily-stat--green">
+                                <img
+                                    class="daily-stat__arrow"
+                                    src="./images/icon-up.svg"
+                                    alt=""
+                                    srcset=""
+                                />303%
+                            </p>
                         </div>
                     </div>
-                    <div class="overview-card">
+                    <div class="card overview-card card--rounded">
                         <div class="overview-card__header">
                             <p class="overview-card__title">Likes</p>
                             <img
@@ -161,10 +235,17 @@
                         </div>
                         <div class="overview-card__body">
                             <p class="overview-card__total">507</p>
-                            <p class="overview-card__daily-stat">553%</p>
+                            <p class="daily-stat daily-stat--green">
+                                <img
+                                    class="daily-stat__arrow"
+                                    src="./images/icon-up.svg"
+                                    alt=""
+                                    srcset=""
+                                />553%
+                            </p>
                         </div>
                     </div>
-                    <div class="overview-card">
+                    <div class="card overview-card card--rounded">
                         <div class="overview-card__header">
                             <p class="overview-card__title">Likes</p>
                             <img
@@ -174,10 +255,17 @@
                         </div>
                         <div class="overview-card__body">
                             <p class="overview-card__total">107</p>
-                            <p class="overview-card__daily-stat">19%</p>
+                            <p class="daily-stat daily-stat--red">
+                                <img
+                                    class="daily-stat__arrow"
+                                    src="./images/icon-down.svg"
+                                    alt=""
+                                    srcset=""
+                                />19%
+                            </p>
                         </div>
                     </div>
-                    <div class="overview-card">
+                    <div class="card overview-card card--rounded">
                         <div class="overview-card__header">
                             <p class="overview-card__title">Total Views</p>
                             <img
@@ -187,25 +275,19 @@
                         </div>
                         <div class="overview-card__body">
                             <p class="overview-card__total">1407</p>
-                            <p class="overview-card__daily-stat">12%</p>
+                            <p class="daily-stat daily-stat--red">
+                                <img
+                                    class="daily-stat__arrow"
+                                    src="./images/icon-down.svg"
+                                    alt=""
+                                    srcset=""
+                                />12%
+                            </p>
                         </div>
                     </div>
                 </div>
             </section>
         </main>
-
-        <!-- 
-  Likes
-  507
-  553%
-
-  Likes
-  107
-  19%
-
-  Total Views
-  1407
-  12%
-   -->
     </body>
+    <script src="./js/index.js"></script>
 </html>
